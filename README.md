@@ -12,6 +12,7 @@ Le but de ce projet est de pouvoir utiliser des méthodes java à distance, depu
 
 ## Architecture du projet
 ![architecture](https://github.com/patchimou/RMI/raw/master/img/architecture.png)
+
 Tout d'abord le package client, on utilise le *ClientLauncher* pour être en tant que client ou le *VendeurLauncher* pour être en tant que gestionnaire du magasin.
 Au niveau du package serveur, celui ci contient des *Enum*, une base de données et un launcher pour le serveur. Il est découpé en 2 :
 

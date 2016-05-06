@@ -11,7 +11,7 @@ Le but de ce projet est de pouvoir utiliser des méthodes java à distance, depu
  - les acheteurs
 
 ## Architecture du projet
-![architecture](https://github.com/patchimou/RMI/img/architecture.png)
+![architecture](https://github.com/patchimou/RMI/tree/master/img/architecture.png)
 Tout d'abord le package client, on utilise le *ClientLauncher* pour être en tant que client ou le *VendeurLauncher* pour être en tant que gestionnaire du magasin.
 Au niveau du package serveur, celui ci contient des *Enum*, une base de données et un launcher pour le serveur. Il est découpé en 2 :
 
@@ -41,7 +41,7 @@ Pour les acheteurs, on peut :
 	 - Date (supérieur ou inférieur à une date)
 
 Pour simplifier l'utilisation et la cohérence entre vendeur et acheteurs (afin d'éviter qu'un vendeur enregistre une voiture de couleur *"bleu"* et un acheteur en recherche une de couleur *"bleue"*), on utilisera les *Enums* côté client.
-![enum](https://github.com/patchimou/RMI/img/enum.png)
+![enum](https://github.com/patchimou/RMI/tree/master/img/enum.png)
 
 > **Remarque** : Toute les méthodes renvoient des *String*, pour avoir un affichage du résultat de la méthode que vous avez appelé dans le client, mettez cette méthode dans un `System.out.println()` sinon l'affichage se fera côté serveur et sera donc inutile pour vous en tant que client !
 

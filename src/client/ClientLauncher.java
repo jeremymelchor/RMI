@@ -14,6 +14,6 @@ public class ClientLauncher {
 
         Registry reg = LocateRegistry.getRegistry();
         IServices interf = (IServices) reg.lookup("client");
-        System.out.println(interf.trierParCouleur(CouleurEnum.));
+        //System.out.println(interf.trierParCouleur(CouleurEnum.));
     }
 }

@@ -56,6 +56,11 @@ Puis inscrire comme arguments de programme :
 
 La base de donnée est une HashTable, avec comme clé les voitures, et comme valeur le nombre de celle-ci présentent dans le magasin.
 
+Au niveau du Registre Universel, on y a ajouté 3 méthodes :
+- ```getLastXResults(int nbKeys)``` qui renvoi le nombre les nbKeys résultats
+- ```getLastXKeys(int nbKeys)``` qui renvoi les nbKeys utilisés
+- ```getPopularKeys()``` qui renvoi une Hashtable avec les clés utilisés en Key et le nombre de fois où on a fait un lookup comme Valeur de la HashTable
+
 Du côté vendeur, comme opérations sur les voitures, on peut :
 
  - Ajouter

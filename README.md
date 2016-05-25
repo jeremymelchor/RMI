@@ -33,15 +33,15 @@ Puis inscrire comme arguments de programme :
 
  2.Avant de lancer le launcher du registre universel, entrer dans les options de VM : 
 
-> -Djava.rmi.server.codebase=http://Nom_du_PC:2001/ 
-> -Djava.security.policy="src/security.policy" 
-> -Djava.rmi.server.useCodeBaseOnly=false
+> -Djava.rmi.server.codebase=http://Nom_du_PC:2001/  
+> -Djava.security.policy="src/security.policy"  
+> -Djava.rmi.server.useCodeBaseOnly=false  
 > Sur *IntelliJ* faire Run -> Edit Configurations.. -> inscrire ces lignes dans *VM Options*
 
  3.Ecrire comme options de VM les lignes suivantes et lancer le launcher
-> -Djava.rmi.server.codebase=http://Nom_du_PC:2001/ 
-> -Djava.security.policy="../RMI-RegistreUniversel/src/security.policy" 
-> -Djava.rmi.server.useCodeBaseOnly=false
+> -Djava.rmi.server.codebase=http://Nom_du_PC:2001/  
+> -Djava.security.policy="../RMI-RegistreUniversel/src/security.policy"  
+> -Djava.rmi.server.useCodeBaseOnly=false  
 > **Attention** ici l'URL du *security.policy* pointe sur le *security.policy* du projet RMI-RegistreUniversel
 
  4.Ecrire les même lignes qu'a l'étape 3 pour le client, et les écrire pour les **2 classes main** et exécuter soit *VendeurLauncher* pour être en tant que vendeur, soit *ClientLauncher* pour être en tant que client.

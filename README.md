@@ -42,7 +42,7 @@ Puis inscrire comme arguments de programme :
 > -Djava.rmi.server.useCodeBaseOnly=false  
 > Sur *IntelliJ* faire Run -> Edit Configurations.. -> inscrire ces lignes dans *VM Options*
 
- 3.Ecrire comme options de VM les lignes suivantes et lancer le launcher
+ 3.Ecrire comme options de VM les lignes suivantes et lancer le launcher du **serveur**
 > -Djava.rmi.server.codebase=http://Nom_du_PC:2001/  
 > -Djava.security.policy="../RMI-RegistreUniversel/src/security.policy"  
 > -Djava.rmi.server.useCodeBaseOnly=false  

@@ -28,8 +28,9 @@ Pour exécuter le projet, il faut :
 
 Puis inscrire comme arguments de programme : 
 
-> *2001 C:\Users\melchor\Documents\RMI-Serveur\out\production\RMI-Serveur*
-> 2001 étant le port sur lequel s'exécute le serveur de classe et l'URL étant le dossier des fichiers *.class* que le client récupérera lorsqu'il ne connait pas les classes. Sous *IntelliJ* faire Run -> Edit Configurations.. -> inscrire cette ligne dans *Program Arguments*
+> *2001 C:\Users\melchor\Documents\RMI-Serveur\out\production\RMI-Serveur*  
+> 2001 étant le port sur lequel s'exécute le serveur de classe et l'URL étant le dossier des fichiers *.class* que le client récupérera lorsqu'il ne connait pas les classes.  
+> Sous *IntelliJ* faire Run -> Edit Configurations.. -> inscrire cette ligne dans *Program Arguments*
 
  2.Avant de lancer le launcher du registre universel, entrer dans les options de VM : 
 

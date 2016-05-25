@@ -12,15 +12,16 @@ Le but de ce projet est de pouvoir utiliser des méthodes java à distance, depu
 
 ## Architecture du projet
 
-Le projet est divisé en 4 parties afin de ne pas tout mélanger :
+Le projet est divisé en 5 parties afin de ne pas tout mélanger :
 
  - Le registre universel qui contient le code de notre propre registre avec un main qui crée un registre RMI, et y inscrit le code de notre registre.
  - Le serveur de classe qui s'occupe juste de télécharger les classes manquantes pour le client
  - Le serveur contenant tout le code métier caché au client avec un main récupérant le code de notre registre universel pour y inscrire nos classes métier
  - Le client, contenant seulement les interfaces et les enums ainsi que l'objet manipulé. En revanche il ne connait pas la sous-classe de l'objet. Deux main y sont présent : un main pour le vendeur, récupérant seulement l'interface de gestion du magasin et un main pour le client récupérant l'interface d'accès à la base de données. Ce découpage a été fait afin qu'un client ne modifie pas la base de données et la questionne seulement.
+ - Le Sender et Receiver pour la partie JMS
 
 
-### Execution
+### Execution RMI
 Pour exécuter le projet, il faut :
 
  1.Démarrer le serveur de classe. Dans la console la ligne suivante va s'afficher : 
@@ -51,6 +52,9 @@ Puis inscrire comme arguments de programme :
 
  4.Ecrire les même lignes qu'a l'étape 3 pour le client, et les écrire pour les **2 classes main** et exécuter soit *VendeurLauncher* pour être en tant que vendeur, soit *ClientLauncher* pour être en tant que client.
 
+### Execution JMS
+
+Pour JMS il suffit simplement de lancer le serveur ActiveMQ, puis de lancer la classe MySender et MyReceiver. Le consommateur de message MyReceiver tournera en boucle infinie (écouter avec le listener). En revanche le producteur MySender se termine après avoir envoyé son message.
 
 ## Fonctionnalités
 

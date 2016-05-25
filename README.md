@@ -40,7 +40,8 @@ Puis inscrire comme arguments de programme :
 > -Djava.rmi.server.codebase=http://Nom_du_PC:2001/  
 > -Djava.security.policy="src/security.policy"  
 > -Djava.rmi.server.useCodeBaseOnly=false  
-> Sur *IntelliJ* faire Run -> Edit Configurations.. -> inscrire ces lignes dans *VM Options*
+> Sur *IntelliJ* faire Run -> Edit Configurations.. -> inscrire ces lignes dans *VM Options*  
+> **Si problèmes d'accès refusé, mettre le chemin absolu du security.policy**
 
  3.Ecrire comme options de VM les lignes suivantes et lancer le launcher du **serveur**
 > -Djava.rmi.server.codebase=http://Nom_du_PC:2001/  

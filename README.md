@@ -23,13 +23,16 @@ Le projet est divisé en 4 parties afin de ne pas tout mélanger :
 ### Execution
 Pour exécuter le projet, il faut :
 
- 1.Démarrer le serveur de classe et récupérer le nom de l'ordinateur affiché dans la console : 
+ 1.Démarrer le serveur de classe. Dans la console la ligne suivante va s'afficher : 
   > To use this ClassFileServer set the property -Djava.rmi.server.codebase=http://Nom_du_PC:2001/
+  
+Garder de coté "Nom_du_Pc" pour l'étape 2
 
 Puis inscrire comme arguments de programme : 
 
-> *2001 C:\Users\melchor\Documents\RMI-Serveur\out\production\RMI-Serveur*  
-> 2001 étant le port sur lequel s'exécute le serveur de classe et l'URL étant le dossier des fichiers *.class* que le client récupérera lorsqu'il ne connait pas les classes.  
+> *2001 C:\Path\to\.class\files*  
+
+> 2001 étant le port sur lequel s'exécute le serveur de classe et l'URL étant le dossier qui contient les fichiers *.class* que le client récupérera lorsqu'il ne connait pas les classes.  
 > Sous *IntelliJ* faire Run -> Edit Configurations.. -> inscrire cette ligne dans *Program Arguments*
 
  2.Avant de lancer le launcher du registre universel, entrer dans les options de VM : 

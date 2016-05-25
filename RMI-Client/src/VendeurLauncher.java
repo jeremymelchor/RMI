@@ -43,5 +43,7 @@ public class VendeurLauncher {
 
         Car car = (Car) reg.lookup("racecar");
         System.out.println(car.toString());
+
+        System.out.println(reg.getPopularKeys());
     }
 }
